@@ -7,28 +7,36 @@
     <title>To-Do List Dom CRUD App</title>
     <link href="./styles.css" rel="stylesheet" type="text/css">
 </head>
+<br>
 <body>
-    <h1>To-Do List App (CRUD)</h1>
-    <form id="inputForm">
-        <div>
-            <label>Enter your task item and press 'submit' to add it to your To-Do list</label>
+    <br>
+    <br>
+    <div class="App">
+        <h1>To-Do List App (CRUD)</h1>
+        <br>
+        <form id="inputForm">
+            <div id="input">
+                <label>Enter your task item below and press 'Add' to construct your To-Do list</label>
+                <br>
+                <br>
+                <input type="text" autocomplete="off" placeholder="Type your task item here..." id="textInput">
+            </div>
             <br>
-            <br>
-            <input type="text" autocomplete="off" placeholder="Type your task items here..." id="textInput">
+            <div>
+                <input type="submit" value="Add">
+                <input type="button" id="deleteAll" value="Delete All">
+            </div>
+        </form>
+        <div id="listlist">
+            <ol id="todolist" >
+
+            </ol>
         </div>
         <br>
-        <div>
-            <input type="submit">
-            <input type="button" id="deleteAll" value="Delete All">
+        <div class="droptarget">
+            🗑️ * Drag individual task items here to delete them
         </div>
-    </form>
-    <div>
-        <ol id="todolist" >
-
-        </ol>
     </div>
-    
-    
 </body>
 <script src="main.js"></script>
 </html>
