@@ -56,11 +56,11 @@ document.addEventListener("dragstart", function(event) {
 // When the draggable element enters the droptarget / bin area, change the bin area div's border style
 document.addEventListener("dragenter", function(event) {
     if ( event.target.className == "droptarget" ) {
-      event.target.style.border = "3px dotted red";
+      event.target.style.border = "2px dotted red";
     }
 });
   
-// By default, data/elements cannot be dropped in other elements. To allow a drop, we must prevent the default handling of the element
+// By default, data/elements cannot be dropped in other elements in the browser. To allow a drop, we must prevent the default handling of the element
 document.addEventListener("dragover", function(event) {
     event.preventDefault();
 });
