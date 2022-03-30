@@ -8,20 +8,26 @@
     <link href="./styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    
+    <h1>To-Do List App (CRUD)</h1>
     <form id="inputForm">
         <div>
             <label>Enter your task item and press 'submit' to add it to your To-Do list</label>
             <br>
-            <input type="text" autocomplete="off" placeholder="Task Item" id="textInput">
+            <br>
+            <input type="text" autocomplete="off" placeholder="Type your task items here..." id="textInput">
         </div>
+        <br>
         <div>
             <input type="submit">
+            <input type="button" id="deleteAll" value="Delete All">
         </div>
     </form>
-    <ol class="todolist">
+    <div>
+        <ol id="todolist" >
 
-    </ol>
+        </ol>
+    </div>
+    
     
 </body>
 <script src="main.js"></script>
